@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .rectangulo1 img{position:absolute;animation:rectangulo 15s;top:0;animation-fill-mode: forwards;}
+        .rectangulo3 img{position:absolute;animation:rectangulo 15s;top:0;left:62%;animation-fill-mode: forwards;}
+        .cuadro img{position:absolute;animation:cuadrado 15s;top: -50%;left:18%;opacity: 0; animation-delay: 1s;animation-fill-mode: forwards; }
+        .cuadroamarillo img{position:absolute;animation:cuadradoamarillo 15s;top: -50%;left:40%;opacity: 0; animation-delay: 1s;animation-fill-mode: forwards; }
+        .cuadroamarillo2 img{position:absolute;animation:cuadradoamarillo2 15s;top: -50%;left:90%;opacity: 0; animation-delay: 1s;animation-fill-mode: forwards; }
+        .rectangulo img{position:absolute;animation:rectangulo1 15s;top:-50%; animation-delay: 7s;animation-fill-mode: forwards;}
+        .cuadro1 img{position:absolute;animation:cuadro1 15s;top:-50%;left:18%; animation-delay: 7s;animation-fill-mode: forwards;}
+        .cuadro3 img{position:absolute;animation:cuadro3 15s;top:-50%;left:18%; animation-delay: 7s;animation-fill-mode: forwards;}
+        .cuadro8 img{position:absolute;animation:cuadro8 15s;top:-50%;left:40%; animation-delay: 7s;animation-fill-mode: forwards;}
+        .cuadromorado img{position:absolute;animation:cuadromorado 15s;top:-50%;left:22%; animation-delay: 9s;animation-fill-mode: forwards;}
+        @keyframes rectangulo{
+	     0%  {top:0;}
+        25% {top:20%; transform: rotate(-90deg);}
+        50% {top:40% ;  transform: rotate(-90deg); }
+        75%    {top:90%; transform:rotate(0deg);  }
+        100%{top:90%;}
+        }
+
+        @keyframes rectangulo3{
+	     0%  {top:0;}
+        25% {top:20%; transform: rotate(-90deg);}
+        50% {top:40% ;  transform: rotate(-90deg); }
+        75%    {top:90%; transform:rotate(0deg);  }
+        100%{top:90%;}
+        }
+        @keyframes cuadrado{
+	     0%  {top:0;opacity: 0; }
+        25% {top:20%; transform: rotate(90deg);opacity: 1;}
+        50% {top:40% ;  transform: rotate(-90deg);opacity:1; }
+        75%   {top:81%; transform:rotate(0deg);opacity:1; }
+        100%{ top:81%;
+                                    opacity:1;    }
+        }
+        @keyframes rectangulo1{
+	     0%  {top:180; opacity:0;}
+        25% {top:20%; transform: rotate(90deg);opacity:1}
+        50% {top:40% ;  transform: rotate(-90deg);opacity:1 }
+        75%    {top:82%; transform:rotate(0deg); opacity:1 }
+        100%{top:82%;opacity:1 }
+        }
+        @keyframes cuadro1{
+	     0%  {top:180; opacity:0;}
+        25% {top:20%; transform: rotate(70deg);opacity:1}
+        50% {top:40% ;  transform: rotate(-70deg); opacity:1}
+        75%    {top:54%; transform:rotate(0deg);opacity:1  }
+        100%{top:54%; opacity:1 }
+        }
+        @keyframes cuadro3{
+	     0%  {top:180; opacity:0;}
+        25% {top:20%; transform: rotate(90deg);opacity:1}
+        50% {top:40% ;  transform: rotate(-90deg);opacity:1 }
+        75%    {top:54%; transform:rotate(-180deg); opacity:1 }
+        100%{top:60%;opacity:1;transform:rotate(-180deg) }
+        }
+        @keyframes cuadro8{
+	     0%  {top:180; opacity:0;}
+        25% {top:20%; transform: rotate(4deg);opacity:1}
+        50% {top:40% ;  transform: rotate(-90deg);opacity:1 }
+        75%    {top:90%; transform:rotate(-160deg); opacity:1 }
+        100%{top:90%;opacity:1;transform:rotate(250deg) ;left:50% }
+        }
+        @keyframes cuadradoamarillo{
+	     0%  {top:0;opacity: 0; }
+        25% {top:20%; transform: rotate(-10deg);opacity: 1;}
+        50% {top:40% ;  transform: rotate(360deg);opacity:1; }
+        75%   {top:81%; transform:rotate(0deg);opacity:1; }
+        100%{ top:81%;
+                                    opacity:1;    }
+        }
+        @keyframes cuadradoamarillo2{
+	     0%  {top:0;opacity: 0; }
+        25% {top:20%; transform: rotate(-10deg);opacity: 1;}
+        50% {top:40% ;  transform: rotate(360deg);opacity:1; }
+        75%   {top:81%; transform:rotate(0deg);opacity:1; }
+        100%{ top:81%;
+                                    opacity:1;    }
+        }
+        @keyframes cuadromorado{
+	     0%  {top:0;opacity: 0; }
+        25% {top:20%; transform: rotate(-360deg);opacity: 1;}
+        50% {top:40% ;  transform: rotate(-360deg);opacity:1; }
+        75%   {top:54%; transform:rotate(-100deg);opacity:1; }
+        100%{ top:54%;
+                                    opacity:1  rotate(200deg);animation-fill-mode: forwards }
+        }
+        body    {position:absolue;background: lightblue; animation:fondo 20s;
+                width: 100%;height: 100%;animation-fill-mode: forwards
+        }
+
+        @keyframes  fondo {0% {background: black;}
+                        50%        {background: lightblue;  }
+                        100%    {background:rgb(81, 81, 248);}
+                        }
+    .titulo {font-size: 100px; margin-left: 3%;}
+    </style>
+</head>
+<body>
+    <div class="titulo">TETRIS</div>
+   <div class="rectangulo1">
+       <img src="RECTANGULO.jpg">
+   </div>
+   <div class="rectangulo">
+    <img src="RECTANGULO.jpg">
+</div>
+   <div class="cuadro">
+       <img src="triangulo.jpg">
+   </div>
+<div class="cuadro1">
+    <img src="TETRIX.png">
+</div>
+<div class="cuadro3">
+    <img src="cuadro6.png">
+</div>
+<div class="cuadroamarillo">
+    <img src="triangulo.jpg">
+</div>
+<div class="cuadroamarillo2">
+    <img src="triangulo.jpg">
+</div>
+<div class="cuadromorado">
+    <img src="cuadro7.png">
+</div>
+<div class="rectangulo3">
+    <img src="RECTANGULO.jpg">
+</div>
+<div class="cuadro8">
+    <img src="cuadro6.png">
+</div>
+</body>
+</html>
